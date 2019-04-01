@@ -78,10 +78,10 @@ Resources:
             RestApiId: !Ref api
     Metadata:
       StackeryName: getUser
-  updateUser:
+  getUser:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub ${AWS::StackName}-updateUser
+      FunctionName: !Sub ${AWS::StackName}-getUser
       Description: !Sub
         - Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName} Function ${ResourceName}
         - ResourceName: updateUser
